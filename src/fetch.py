@@ -45,6 +45,7 @@ def criar_tabela():
         create_table_query = ''' 
         CREATE TABLE IF NOT EXISTS bitcoin_quotes (
             id SERIAL PRIMARY KEY,
+            price NUMERIC,
             volume_24h NUMERIC,
             market_cap NUMERIC,
             last_updated TIMESTAMP
